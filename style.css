@@ -2,73 +2,105 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} 
+}
 
-input {
+body {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1100px;
+}
+
+button {
     margin-top: 50px;
     height: 60px;
     width: 190px;
     background-color: #333333;
     color: white;
     font-family: 'Space Mono';
+    border: none;
+    cursor: pointer;
+} 
+button:hover {
+    background-color: lightgrey;
+    color: #333333;
 }
 
 .head {
     font-family: 'Inconsolata';
     font-size: 12px;
-    width: 400px;
-    padding-top: 15px;
-    padding-left: 45px;
+    height: 55px;;
+    padding: 15px;
+    margin-bottom: 70px;
+    /* background-color: green; */
 }
 
 .main {
-    margin-top: 150px;
+    /* padding-top: 150px; */
+    margin: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-weight: 700px;  
+    justify-content: space-between;
+
+    font-weight: 700px;
     font-family: 'Space Mono';
     color: #333333;
     gap: 100px;
+    margin-bottom: 65px;
+    /* background-color: blue; */
+
 }
-.main img{
-    width: 400px;
+
+.main img {
+    max-width: 400px;
 }
+
+#id {
+    /* background-color: pink; */
+}
+
 #id p {
     padding-top: 20px;
     width: 300px;
 }
+
 #id h1 {
-    width: 500px;
     font-size: 40px;
 }
+
+.footer {
+    width: 100%;
+    padding: 22px 0;
+    height: 55px;;
+    text-align: center;
+    font-size: 11px;
+    color: #BDBDBD;
+    font-family: 'Montserrat';
+    /* background-color: rebeccapurple; */
+}
+a {
+    font-weight: bolder;
+    color: #BDBDBD;
+}
+a:hover{
+    color: black;
+}
+
 @media only screen and (max-width: 800px) {
     .main {
         flex-direction: column;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    #id {
-        justify-content: center;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #id {
-        padding-left: 200px;
-    }
-    .main img {
-        width: 286px;
-        height: 238px;
-    }
-    #id h1 {
-        font-size: 20px;
         
     }
-    #id p {
-        margin-top: 30px;
-        font-size: 18px;
+    .main img {
+        width: 100%;
+        padding: 20px 20px;
+    }
+
+    #id {
+        width: 100%;
+       padding: 0 50px;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
     }
 }
-
-
